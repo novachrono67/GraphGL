@@ -1,0 +1,9 @@
+{
+  director(id: "realisateur-1") {
+    id
+    prenom
+    nom
+    dateDeNaissance
+    dateDeMort
+  }
+}

@@ -1,0 +1,33 @@
+type Query {
+    film(id: ID!): Film
+    director(id: ID!): Realisateur
+    actor(id: ID!): Acteur
+}
+
+type Film {
+    id : ID
+    titreFrancais : String
+    titreOriginal : String
+    dateDeSortie : String
+    realisateur : Realisateur
+    listeActeurs : Acteur
+    etatAvencementFilm : String
+}
+
+type Realisateur {
+    id : ID
+    nom : String
+    prenom : String
+    dateDeNaissance : String
+    dateDeMort : String
+    listeDeFilms : [Film]
+}
+
+type Acteur {
+    id : ID
+    nom : String
+    prenom : String
+    dateDeNaissance : String
+    dateDeMort : String
+    listeDeFilmsAvecRoles : String
+}

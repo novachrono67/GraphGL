@@ -1,0 +1,9 @@
+{
+  actor(id: "acteur-1") {
+    id
+    prenom
+    nom
+    dateDeNaissance
+    dateDeMort
+  }
+}

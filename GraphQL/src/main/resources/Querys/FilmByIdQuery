@@ -1,0 +1,21 @@
+{
+  film(id: "film-1") {
+    id
+    titreFrancais
+    titreOriginal
+    dateDeSortie
+    realisateur {
+      id
+      nom
+      prenom
+    }
+    listeActeurs {
+      id
+      prenom
+      nom
+      dateDeNaissance
+      dateDeMort
+    }
+    etatAvencementFilm
+  }
+}
